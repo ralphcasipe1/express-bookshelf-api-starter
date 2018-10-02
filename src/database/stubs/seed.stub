@@ -1,0 +1,17 @@
+const faker = require('faker')
+
+export function seed(knex, Promise) {
+  return knex('table_name')
+    .del()
+    .then(() =>
+      Promise.all([
+        knex('table_name')
+          .insert([
+            {
+              column1: 'sample value',
+              column2: 'sample value'
+            }
+          ])
+      ])
+    )
+}
