@@ -5,7 +5,7 @@
 ## Setup
 Clone the repository and install the dependency:
 ```
-$ git clone
+$ git clone https://github.com/ralphcasipe1/express-bookshelf-api-starter.git <optional: other_name>
 $ cd <application_name>
 $ rm -rf .git # if it's terminal
 $ remote-item .git # powershell
